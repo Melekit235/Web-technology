@@ -1,0 +1,200 @@
+/* основной стиль */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+}
+
+
+
+header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    width: 100%;
+    max-width: 100px;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.title {
+    margin: 0;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin-right: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.image {
+    margin: 10px;
+    width: calc((100% - 40px) / 3); /* каждая картинка занимает 1/3 ширины галереи */
+    position: relative;
+}
+
+.image img {
+    max-width: 100%;
+}
+
+.caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 16px;
+    padding: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+
+
+footer {
+    background-color: #333;
+    padding: 10px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-item {
+    margin: 10px;
+    text-decoration: none;
+}
+
+.footer-item img {
+    max-width: 50px;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    nav {
+        margin-bottom: 20px;
+    }
+
+    form {
+        margin-bottom: 20px;
+    }
+
+    .gallery {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .image {
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        margin-right: 20px;
+    }
+
+    nav {
+        margin-right: 20px;
+    }
+
+    form {
+        margin-right: 20px;
+    }
+
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .image {
+        width: 30%;
+        margin-bottom: 20px;
+    }
+
+    .caption {
+        text-align: center;
+    }
+}
+
+
+.none{
+    display: none;
+}
