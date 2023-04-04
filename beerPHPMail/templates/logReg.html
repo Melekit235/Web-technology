@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Регистрация/Вход</title>
+  <link rel="stylesheet" href={link_style}>
+</head>
+
+
+<body>
+<h1>Регистрация/Вход</h1>
+<div class="form">
+
+  <h2>Регистрация</h2>
+  <form method="post" action="">
+    <label for="username">Логин:</label>
+    <input type="text" name="usernameR" required>
+
+    <label for="password">Пароль:</label>
+    <input type="password" name="passwordR" required>
+
+    <?php echo $content; ?>
+
+    <input type="submit" name="register" value="Зарегистрироваться">
+  </form>
+
+</div>
+<br>
+<div class="form">
+  <h2>Вход</h2>
+  <form method="post" action="">
+    <label for="username">Логин:</label>
+    <input type="text" id="username" name="username" required>
+
+    <label for="password">Пароль:</label>
+    <input type="password" id="password" name="password" required>
+
+    <input type="submit" name="login" value="Войти">
+  </form>
+
+</div>
+</body>
+</html>
